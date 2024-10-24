@@ -11,6 +11,7 @@ import java.io.IOException;
 @WebServlet(name = "helloServlet", urlPatterns = "/hello")
 public class HelloServlet extends HttpServlet {
 
+    // Ctrl + O → "service" 검색 → 자물쇠 잠겨있는(protected) 불러오기
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
