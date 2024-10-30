@@ -46,6 +46,8 @@ public class FrontControllerServletV3 extends HttpServlet {
         view.render(mv.getModel(), request, response);
     }
 
+    // viewResolver : view 를 찾아주는 해결자 역할을 하는 것.
+    // Controller 가 반환한 논리 뷰 이름(members)을 실제 물리 뷰 경로(/WEB_INF/views/members.jsp)로 변경하고 실제 물리 경로가 있는 MyView 객체를 반환한다.
     private static MyView viewResolver(String viewName) {
         return new MyView("/WEB-INF/views/" + viewName + ".jsp");
     }

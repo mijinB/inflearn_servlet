@@ -6,5 +6,6 @@ import java.util.Map;
 
 public interface ControllerV3 {
 
+    // 서블릿 종속성(HttpServletRequest, HttpServletResponse) 제거
     ModelView process(Map<String, String> paramMap);
 }
